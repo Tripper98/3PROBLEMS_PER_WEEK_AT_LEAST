@@ -8,7 +8,7 @@ class BasicTestSuite(unittest.TestCase):
 
     def test_fproblem(self):
         x = Solution().longestCommonPrefix(strs=["cir","car"])
-        print(x)
+        # print(x)
         assert x == "c", "Should be \"fl\""
 
 
