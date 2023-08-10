@@ -6,7 +6,6 @@ class BasicTestSuite(unittest.TestCase):
 
     def test_fproblem(self):
         x = Solution().romanToInt(s= "MCMXCIV")
-        print(x)
         assert x == 1994, "Should be 58"
 
 
