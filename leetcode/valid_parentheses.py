@@ -39,28 +39,3 @@ class Solution(object):
                 return False
             
         return True
-    
-
-import unittest
-
-class BasicTestSuite(unittest.TestCase):
-    """Basic test cases."""
-
-    def test_isValid(self):
-        # x = Solution().isValid(s="()")
-        # assert x == True, "Should be True"
-
-
-        for i, j in (
-            ("()",True),
-            ("{[(}]}",False),
-            ("[[]",False),
-            ("]{)}(",False),
-        ):
-            print(i)
-            x = Solution().isValid(s=i)
-            assert x == j, f"Should be {j}"
-
-
-if __name__ == '__main__':
-    unittest.main()

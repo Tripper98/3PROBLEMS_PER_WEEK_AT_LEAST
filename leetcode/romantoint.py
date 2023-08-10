@@ -18,8 +18,6 @@ class Solution(object):
         i = 0 ; cmp = len(s)
 
         while cmp >=1:
-            print(f" i = {i}")
-            print(f" cmp = {cmp}")
             try:
                 if dict_roman[s[i]] >= dict_roman[s[i+1]]:
                     converted_number +=dict_roman[s[i]]
@@ -30,7 +28,6 @@ class Solution(object):
             except:
                 converted_number += dict_roman[s[-1]]
                 i+=1;cmp-=1
-            print(converted_number)
         # converted_number += dict_roman[s[-1]]
         return converted_number
     
